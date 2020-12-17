@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!-- HTML HEAD LINK-->
+<html>
+    <head>
+        <title>Alfie Pardoe</title>
+        <link href="stylesheet.css?version=1" type="text/css" rel="stylesheet">
+        <link rel="shortcut icon" href="SW.ico">
+    </head>
+
+<!--Body-->
+
+<body id="top">
+
+<a name="avatar"></a>
+
+<!--Navigation Bar-->
+
+<div class="topnav">
+    <a class="scrollTo" href="#avatar">Home</a>
+    <a class="scrollTo" href="#exp">Experience</a>
+    <a class="scrollTo" href="#skill">My Skills</a>
+    <a class="scrollTo" href="#education">Education</a>
+    <a class="scrollTo" href="#personal">More About Me</a>
+</div>
+
+<!--Profile-->
+
+<div class="avatar" id="avatar">
+    <img src="avatar.png">
+</div>
+
+<div class="caption">Computer Scientist, Tech Enthusiast, Sports Lover</div>
+
+<div class="blurb">
+    <h1 class="hey">Hey, I'm Alfie</h1>
+    <p>I designed and implemented this site as a digital CV to tell you a bit about myself.</p>
+    <p>Born in England, I moved to the USA at a young age where I went to High School</p>
+    <p>From there, I moved to New Zealand to study for my University Degree where I graduated with a <span class="degree">BSc in Computer Science</span>, with a minor in Comparative Religious Studies</p>
+</div>
+
+<!--Experience-->
+
+<div class="exp" id="exp">
+    <a name="exp"></a>
+    <h1 class="exptitle">Previous Experience</h1>
+
+    <button type="button" class="job">Blue Marble Space Institute</button>
+    <div class="content">
+        <p class="pos">Intern</p>
+        <p>Developed a proficiency at <span class="bold">Python</span> through real-life space research</p>
+        <p><span class="bold">Researched</span> topics including atmospheric makeup of Saturn's moon Titan</p>
+        <p>Collected and processed <span class="bold">data</span> for planning coding methedolgoy for <span class="bold">statistical</span> analysis</p>
+        <p class="dates">March 2014 - October 2014</p>
+    </div>
+
+    <button type="button" class="job">Advance Equipment Supplies</button>
+    <div class="content">
+        <p class="pos">POS Tech + Database Admin</p>
+        <p>Programmed and managed product builds for <span class="bold">clients</span> from the moment sale was made</p>
+        <p>Learnt to help irritated customers by fixing complex <span class="bold">technical issues</span></p>
+        <p><span class="bold">Taught</span> the sales team technical information which increased sales</p>
+        <p>Developed <span class="bold"> Python scripts</span> to help sales team digitally negotiate sales</p>
+        <p class="dates">February 2018 - November 2018</p>
+    </div>
+
+    <button type="button" class="job">New Zealand Government</button>
+    <div class="content">
+        <p class="pos">Entitlement Payments Officer</p>
+        <p>Worked with client data to ensure sensitive information was maintained with high quality</p>
+        <p>Balanced a large workload while keeping a high <span class="bold">attention to detail</span></p>
+        <p>Allocated tasks amongst the team to maximise department output</p>
+        <p class="dates">March 2019 - November 2019</p>
+    </div>
+
+    <button type="button" class="job">Univeristy of Otago</button>
+    <div class="content">riends
+        <p class="pos">Residential Assistant</p>
+        <p>Developed the skill of teaching <span class="bold">complex technical theory</span> and practice to other people</p>
+        <p><span class="bold">Taught</span> over twenty-five school students Python, SQL, Java and other technical skills</p>
+        <p>Learnt how to handle a high <span class="bold">workload</span> sustained over unpredictable hours</p>
+        <p>Mastered the organisation and execution of <span class="bold">large events</span> for hundreds of students</p>
+        <p class="dates">February 2016 - November 2017</p>
+    </div>
+</div>
+
+<script>
+    let coll = document.getElementsByClassName("job");
+    let i;
+
+    for ( i = 0; i < coll.length; i++){
+        coll[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            }else{
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+<!--Skills-->
+<div class="skill" id="skill">
+    <a name="skill"></a>
+
+    <h1>Skills I've Got</h1>
+
+    <label for="Java">Java</label>
+    <progress id="Java" value= "80" max= "100"></progress>
+
+    <label for="Python">Python</label>
+    <progress id="Python" value= "80" max= "100"></progress>
+
+    <label for="SQL">SQL</label>
+    <progress id="SQL" value= "70" max= "100"></progress>
+
+    <label for="HTML">HTML</label>
+    <progress id="HTML" value= "60" max= "100"></progress>
+
+    <label for="CSS">CSS</label>
+    <progress id="CSS" value= "60" max= "100"></progress>
+
+    <label for="JavaScript">JavaScript</label>
+    <progress id="JavaScript" value= "33" max= "100"></progress>
+
+    <label for="C">C</label>
+    <progress id="C" value= "33" max= "100"></progress>
+
+    <label for="Microsoft Suite">Microsoft Suite</label>
+    <progress id="Microsoft Suite" value= "90" max= "100"></progress>
+
+    <label for="Adobe Suite">Adobe Suite</label>
+    <progress id="Adobe Suite" value= "60" max= "100"></progress>
+
+</div>
+
+<!--Education-->
+<div class="education" id="education">
+    <a name="education"></a>
+    <h1>Education</h1>
+    <p class="deg">Bachelor of Science</p>
+    <p class="major">Major: Computer Science</p>
+    <p class="minor">Minor: Comparative Religion</p>
+    <p class="grade">2:1 Equivalent</p>
+    <p class="uni">Univeristy of Otago (New Zealand) Class of 2017</p>
+
+</div>
+
+<!--About Me-->
+<div class="me" id="personal">
+    <div class="box_a"><h1>ABOUT</h1></div>
+    <div class="box_b"></div>
+    <div class="box_c"><h1>ME</h1></div>
+    <!--
+    <img src= "Caps.png">
+    <img src= "cricket.png"> -->
+</div>
+
+<div class="more">
+    <h1>Sports Fanatic!</h1>
+    <p>Passionate about many sports such as: Cricket, Ice Hockey, Basketball, American Football, Rugby and more</p>
+    <h1>Eager Learner!</h1>
+    <p>Always watching documentaries and educational videos on a variety of topics like Ancient History, Economics, Evolution, Astrophyics, etc</p>
+    <h1>Highly Organised!</h1>
+    <p>Hyper organised individual. Experience with organising comes from putting together multiple large events for residential hall</p>
+    <h1>Customer Service!</h1>
+    <p>Worked in multiple high-paced fast food joints, including at a professional sporting arena! Taught me a lot about good customer service</p>
+    <h1></h1>
+</div>
+
+<div class="foot">
+    <img class="mailImg" src="mail.png">
+    <img class="phoneImg" src="Whats.png">
+    <a href="https://linkedin.com/in/alfie-pardoe-7436a0158" target="blank"><img class="linked" src="linkedin.png"></a>
+    <a href="https://github.com/Paral801" target="blank"><img class="gitHub" src="git.png"></a>
+    <p class="copyright">Alfred Pardoe</p>
+    <p class="number">+44 (0) 747 0074 612</p>
+    <p class="email">alfred.j.pardoe [at] gmail.com</p>
+    <p class="linkedLink">LinkedIn</p>
+    <p class="gitLink">GitHub</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+    $(".scrollTo").on('click', function(e) {
+       e.preventDefault();
+       var target = $(this).attr('href');
+       $('html, body').animate({
+         scrollTop: ($(target).offset().top)
+       }, 1000);
+    });
+</script>
+
+</body>
+</html>

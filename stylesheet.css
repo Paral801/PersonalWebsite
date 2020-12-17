@@ -1,0 +1,308 @@
+
+/*Navigation Bar*/
+
+.topnav{
+    width: 100%;
+    height: 83px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.topnav a{
+    font-size: 20px;
+    font-family: "Arial";
+    font-weight: bold;
+    padding: 30px;
+    color: #0075b3;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.topnav a:hover{
+    background-color: #eeeeee;
+    color: #000000;;
+}
+
+/*Profile*/
+
+.avatar{
+    text-align: center;
+    padding: 20px;
+    transform: scale(0.75);
+    margin-top: 50px;
+}
+
+.caption{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Calibri";
+    color: #0075b3;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+.blurb{
+    text-align: center;
+    background-color: #0075b3;
+    margin: 20px auto;
+    padding: 50px;
+    min-height: 300px;
+}
+
+.blurb .hey{
+    display: block;
+    color: white;
+    font-family: "Helvetica";
+    font-size: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    width: 35%;
+    margin: 20px auto;
+}
+
+.blurb p{
+    color: white;
+    min-width: 25%;
+    max-width: 35%;
+    max-height: 100%;
+    font-family: "Helvetica";
+    font-size: 18px;
+    margin: 20px auto;
+    line-height: 35px;
+    word-wrap: break-word;
+}
+
+.degree{
+    font-weight: bold;
+}
+
+/*Experience*/
+
+.content{
+    display: none;
+}
+
+.exp{
+    text-align: center;
+    padding: 50px;
+    min-height: 300px;
+}
+
+.exp .exptitle{
+    display: block;
+    color: #0075b3;
+    font-family: "Helvetica";
+    font-size: 40px;
+}
+
+.exp button{
+    background-color: #0075b3;
+    color: #ffffff;
+    outline: none;
+    text-align: center;
+    padding: 25px;
+    margin: 15px;
+    width: 50%;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.exp button:hover{
+    color: #0075b3;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.exp .content{
+    color: #0075b3;
+    background-color: #ffffff;
+}
+
+.exp .bold{
+    font-weight: bold;
+}
+
+.exp .dates, .pos{
+    font-weight: bold;
+    font-size: 120%;
+    margin: 20px;
+}
+
+/*Skills*/
+
+.skill{
+    text-align: center;
+    background-color: #0075b3;
+    margin: 20px auto;
+    padding-bottom: 120px;
+    padding-top: 50px;
+    min-height: 300px;
+}
+
+.skill label, progress{
+    display: inline-block;
+    width: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px;
+}
+
+progress {
+    background: black;
+}
+  
+progress {
+    color: rgb(172, 172, 172);
+}
+
+progress::-webkit-progress-value {
+    background: black;
+}
+  
+progress::-webkit-progress-bar {
+    background: rgb(172, 172, 172);
+}
+
+.skill h1{
+    color: #ffffff;
+    font-family: "Helvetica";
+    font-size: 40px;
+}
+
+
+/*education*/ 
+
+.education{
+    color:#000000;
+    background-color: white;
+    font-family: "Helvetica";
+    text-align: center;
+    margin: -100px auto auto auto;
+    box-shadow: 2px grey;
+    border-radius: 15px;
+    border-style: groove;
+    padding: 10px;
+    width: 20%;
+}
+
+.education .deg{
+    font-size: 20px;
+}
+
+.education .major{
+    font-size: 18px;
+}
+
+.education .minor{
+    font-size: 15px;
+}
+
+.education .grade, .uni{
+    font-size: 12px;
+}
+
+/*About Me*/
+
+.me{
+    display: grid;
+    width: 100%;
+    min-height: 150px;
+    margin: -150px auto auto auto;
+    grid-template: 100% / 39% 22% 39%;
+    text-align: center;
+}
+
+.me .box_a{
+    grid-area: 1 / 1;
+
+}
+
+.me .box_b{
+    grid-area: 1 / 2;
+}
+
+.me .box_c{
+    grid-area: 1 / 3;
+}
+
+.me h1{
+    font-size: 60px;
+    font-family: "Helvetica";
+    color: #0075b3;
+}
+
+.more{
+    text-align: center;
+    width: 100%;
+    color: #0075b3;
+}
+
+.foot{
+    background-color: #0075b3;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 5% 95%;
+    color: white;
+    width: 100%;
+    height: 250px;
+}
+
+.foot img{
+    transform: scale(0.7);
+    margin: 2px;
+}
+
+.foot .mailImg{
+    grid-area: 1 / 1;
+    
+}
+
+.foot .phoneImg{
+    grid-area: 2 / 1;
+}
+
+.foot .linked{
+    grid-area: 3 / 1;
+}
+
+.foot .gitHub{
+    grid-area: 4 / 1;
+}
+
+.foot .copyright{
+    grid-area: 5 / 1;
+    color: white;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.foot .number{
+    grid-area: 2 / 2;
+    color: white;
+    font-size: 15px;
+}
+
+.foot .email{
+    grid-area: 1 / 2;
+    color: white;
+    font-size: 15px;
+}
+
+.foot .linkedLink{
+    grid-area: 3 / 2;
+    color: white;
+    font-size: 15px;
+}
+
+.foot .gitLink{
+    grid-area: 4 / 2;
+    color: white;
+    font-size: 15px;
+}
